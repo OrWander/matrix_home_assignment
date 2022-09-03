@@ -15,7 +15,7 @@ export default function SearchByName(props: {
       <Autocomplete
         onChange={(event: any): any => updateValue(event.target.innerText)}
         options={props.options.map((p) => { return p.title })}
-        renderInput={(params) => <TextField {...params} label="Search by name   " />}
+        renderInput={(params) => <TextField {...params} label="Search by name" />}
       />
     </div>
   );

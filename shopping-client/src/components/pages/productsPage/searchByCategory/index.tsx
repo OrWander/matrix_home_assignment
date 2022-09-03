@@ -18,10 +18,11 @@ export default function SearchByCategory(props: {
         <FormControl fullWidth variant="outlined">
           <InputLabel id="demo-simple-select-label">Search by category</InputLabel>
           <Select
-            labelId="demo-simple-select-label-leftwidth"
-            id="demo-simple-select-leftwidth"
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            label="Search by category ---"
             //@ts-ignore
-            renderInput={(params:any) => <TextField {...params} label="Search by name   " />}
+            //renderInput={(params:any) => <TextField {...params} label="Search by name   " />}
             onChange={handleChange}
             >
             <MenuItem value={1}>Price: Low to High</MenuItem>

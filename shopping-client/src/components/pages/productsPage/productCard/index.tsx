@@ -29,7 +29,7 @@ export default function ProductCard(props: {
       />
       <div>
         <ListItemText
-          primary={`Price: $${props.price} `}
+          secondary={`Price: $${props.price} `}
           style={{borderTop:"1px solid #D3D3D3",borderBottom:"1px solid #D3D3D3",padding:"4px"}}
         />
       </div>

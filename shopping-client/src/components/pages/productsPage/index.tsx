@@ -36,12 +36,12 @@ export default function ProductsPage() {
       <h1 style={{ textAlign: "left", marginLeft: "20px" }}> The Smartphone Shop  </h1>
       <div className="searchDivs" style={{ display: "inline-block", margin: "auto", width: "30%",marginTop:"2%",marginBottom:"5%",textAlign:"center" }}>
         <span>
-        <SearchByCategory OrderBy={OrderBy} />
-        <br />
         <SearchByName
           OrderByFreeSearch={OrderByFreeSearch}
           options={products}
         />
+        <br />
+        <SearchByCategory OrderBy={OrderBy} />
         </span>
       </div>
       </div>
