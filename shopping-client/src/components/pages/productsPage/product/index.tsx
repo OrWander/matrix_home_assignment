@@ -2,7 +2,7 @@ import React from "react";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 
-export default function Product(props: {
+export default function ProductCard(props: {
   id: number;
   title: string;
   thumbnail: string;

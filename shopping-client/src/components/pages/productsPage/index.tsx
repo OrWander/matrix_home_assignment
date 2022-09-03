@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useAppSelector } from "../../../store/hooks";
-import Product from "./product";
-import SelectUi from "./select";
-import SearchInput from "./free_search";
+import ProductCard from "./product";
+import SearchByCategory from "./searchByCategory";
+import SearchByName from "./searchByName";
 import getProducts from "../../../store/async/getProductsAction";
 import getChosenProducts from "../../../store/async/getChosenProductsAction";
 
@@ -36,8 +36,9 @@ export default function ProductsPage() {
       <h1 style={{ textAlign: "left", marginLeft: "20px" }}> The Smartphone Shop  </h1>
       <div className="searchDivs" style={{ display: "inline-block", margin: "auto", width: "30%",marginTop:"2%",marginBottom:"5%",textAlign:"center" }}>
         <span>
-        <SelectUi OrderBy={OrderBy} />
-        <SearchInput
+        <SearchByCategory OrderBy={OrderBy} />
+        <br />
+        <SearchByName
           OrderByFreeSearch={OrderByFreeSearch}
           options={products}
         />
@@ -46,7 +47,7 @@ export default function ProductsPage() {
       </div>
       {currentDisplay.map((p) => {
         return <div style={{ display: "inline-block", maxWidth: "340px", margin: "auto", marginRight: "20px" }}>
-          <Product key={p.id} {...p}
+          <ProductCard key={p.id} {...p}
           />
         </div>
       })}

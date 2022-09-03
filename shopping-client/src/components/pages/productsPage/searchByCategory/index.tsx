@@ -5,7 +5,7 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { InputLabel } from "@mui/material";
 
-export default function SelectUi(props: {
+export default function SearchByCategory(props: {
   OrderBy: FunctionStringCallback;
 }) {
   const [currentSort, setCurrentSort] = React.useState('');
