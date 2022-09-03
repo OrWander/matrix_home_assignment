@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useAppSelector } from "../../../store/hooks";
-import ProductCard from "./product";
+import ProductCard from "./productCard";
 import SearchByCategory from "./searchByCategory";
 import SearchByName from "./searchByName";
 import getProducts from "../../../store/async/getProductsAction";

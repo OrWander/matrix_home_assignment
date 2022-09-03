@@ -6,6 +6,9 @@
   font-family: "Dosis", sans-serif;
 
 }
+Select,select,MenuItem{
+  text-align: left;
+}
 .App {
   text-align: center;
   font-family: "Dosis", sans-serif;
