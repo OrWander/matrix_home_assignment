@@ -1,9 +1,9 @@
-import React from "react";
+
 import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import { Grid, InputLabel, TextField } from "@mui/material";
+import {  InputLabel } from "@mui/material";
 
 export default function SearchByCategory(props: {
   OrderBy: FunctionStringCallback;
@@ -21,8 +21,6 @@ export default function SearchByCategory(props: {
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             label="Search by category ---"
-            //@ts-ignore
-            //renderInput={(params:any) => <TextField {...params} label="Search by name   " />}
             onChange={handleChange}
             >
             <MenuItem value={1}>Price: Low to High</MenuItem>

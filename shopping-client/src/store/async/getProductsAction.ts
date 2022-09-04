@@ -5,10 +5,9 @@ import getProductsApi from "../services/getProductsService";
 export default async function getProducts() {
   try {
     const result = await getProductsApi();
-    console.log(result);
     store.dispatch(setProducts(result));
     return result;
   } catch (error) {
-    alert("Something went wrong");
+    alert("Oops@ Something went wrong");
   }
 }
