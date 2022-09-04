@@ -1,4 +1,3 @@
-import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -8,16 +7,19 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import ProductsPage from "../../pages/productsPage";
 
+
 export const routingConfiguration = [
   {
     key: "prodcuts",
-    path: "/prodcuts",
+    path: "/",
     label: "Prodcuts",
     element: <ProductsPage />
   },
 ];
 
 export type RouteConfig = typeof routingConfiguration[0];
+
+const matrixLogo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBzOEosctXw-bWCC3A6bSb8wOmw-7DGhfYObl-dAWY3wIgKoeGOMPT-UqmaRubfTryZHA&usqp=CAU";
 
 const Header = () => {
   return (
@@ -31,7 +33,7 @@ const Header = () => {
               display: { xs: "none", md: "flex" },
               letterSpacing: ".3rem",
             }}>
-            <img style={{ width:"60px" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKEUIPK1S0gHNI-k-vc3e8znrL5KojXQA7aQ&usqp=CAU" alt="" />
+            <img style={{ width:"60px",border:"10px solid white" }} src={matrixLogo} alt="matrixLogo" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {routingConfiguration.map((route: RouteConfig) => (
