@@ -1,6 +1,6 @@
 import React from "react";
 import ListItemText from "@mui/material/ListItemText";
-import Typography from "@mui/material/Typography";
+import './index.css';
 
 export default function ProductCard(props: {
   id: number;
@@ -11,26 +11,14 @@ export default function ProductCard(props: {
   catergory: string;
 }) {
   return (
-    <div className="container" style={{ width: "300px", padding: "5%",margin:"20px 20px" }}>
-      <img alt="img" src={props.thumbnail} style={{ height: "180px", width: "250px", borderRadius: "30px", marginRight: "10px" }} />
+    <div className="containerProductCard">
+      <img className="imgProductCard" alt="product_image" src={props.thumbnail} />
       <ListItemText
         primary={`${props.title} `}
-        secondary={
-          <React.Fragment>
-            <Typography
-              sx={{ display: "inline" }}
-              component="span"
-              variant="body2"
-              color="text.primary">
-              {props.catergory}
-            </Typography>
-          </React.Fragment>
-        }
       />
-      <div className="ListItemTexti">
+      <div className="ListItemText">
         <ListItemText
           secondary={`Price: $${props.price} `}
-          style={{ borderTop: "1px solid #D3D3D3", borderBottom: "1px solid #D3D3D3", padding: "4px" }}
         />
       </div>
       
