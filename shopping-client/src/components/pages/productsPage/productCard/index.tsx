@@ -11,7 +11,7 @@ export default function ProductCard(props: {
   catergory: string;
 }) {
   return (
-    <div className="container" style={{ width: "300px", padding: "5%" }}>
+    <div className="container" style={{ width: "300px", padding: "5%",margin:"20px 20px" }}>
       <img alt="img" src={props.thumbnail} style={{ height: "180px", width: "250px", borderRadius: "30px", marginRight: "10px" }} />
       <ListItemText
         primary={`${props.title} `}
@@ -27,12 +27,12 @@ export default function ProductCard(props: {
           </React.Fragment>
         }
       />
-      <div>
+      <div className="ListItemTexti">
         <ListItemText
           secondary={`Price: $${props.price} `}
-          style={{borderTop:"1px solid #D3D3D3",borderBottom:"1px solid #D3D3D3",padding:"4px"}}
+          style={{ borderTop: "1px solid #D3D3D3", borderBottom: "1px solid #D3D3D3", padding: "4px" }}
         />
       </div>
-   </div>
+    </div>
   );
 }
