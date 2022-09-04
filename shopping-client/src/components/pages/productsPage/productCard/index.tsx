@@ -33,6 +33,7 @@ export default function ProductCard(props: {
           style={{ borderTop: "1px solid #D3D3D3", borderBottom: "1px solid #D3D3D3", padding: "4px" }}
         />
       </div>
+      
     </div>
   );
 }
