@@ -1,5 +1,4 @@
 import { Autocomplete, TextField } from '@mui/material';
-import './index.css';
 
 export default function SearchByName(props: {
   options: Array<any>;
@@ -22,7 +21,6 @@ export default function SearchByName(props: {
     return acc;
   }, []);
 
-  console.log(result)
   return (
     <div className="container">
       <Autocomplete

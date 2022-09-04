@@ -1,4 +1,3 @@
-import React from "react";
 import ListItemText from "@mui/material/ListItemText";
 import './index.css';
 
@@ -20,8 +19,7 @@ export default function ProductCard(props: {
         <ListItemText
           secondary={`Price: $${props.price} `}
         />
-      </div>
-      
+      </div> 
     </div>
   );
 }
