@@ -8,6 +8,6 @@ export default async function getProducts() {
     store.dispatch(setProducts(result));
     return result;
   } catch (error) {
-    alert("Oops@ Something went wrong");
+    alert("Oops! Something went wrong");
   }
 }

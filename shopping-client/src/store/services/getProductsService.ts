@@ -1,7 +1,7 @@
-import axios from "axios";
+import axiosInstance from "./constants";
 
 export default async function getProductsApi() {
-  const result = await axios.get("https://dummyjson.com/products/category/smartphones");  
+  const result = await axiosInstance.get("/category/smartphones");  
   return result.data.products;
 }
 

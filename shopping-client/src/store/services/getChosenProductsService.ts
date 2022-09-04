@@ -1,6 +1,6 @@
-import axios from "axios";
+import axiosInstance from "./constants";
 
 export default async function getChosenProductsApi(chosenSmartphone: string) {
-  const result = await axios.get(`https://dummyjson.com/products/search?q=${chosenSmartphone}`);
+  const result = await axiosInstance.get(`/search?q=${chosenSmartphone}`);
   return result.data.products;
 }
