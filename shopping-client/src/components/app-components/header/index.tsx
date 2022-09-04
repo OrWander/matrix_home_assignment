@@ -6,7 +6,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import ProductsPage from "../../pages/productsPage";
-
+import './index.css';
 
 export const routingConfiguration = [
   {
@@ -33,14 +33,14 @@ const Header = () => {
               display: { xs: "none", md: "flex" },
               letterSpacing: ".3rem",
             }}>
-            <img style={{ width:"60px",border:"10px solid white" }} src={matrixLogo} alt="matrixLogo" />
+            <img className="logo" src={matrixLogo} alt="matrixLogo" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {routingConfiguration.map((route: RouteConfig) => (
               <Button key={route.key}>
-                <Typography textAlign="center">
+                <Typography>
                   <Link
-                    style={{ color: "white", textDecoration: "none" }}
+                  className="link"
                     to={route.path}>
                     {route.label}
                   </Link>
