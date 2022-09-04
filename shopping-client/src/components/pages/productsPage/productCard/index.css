@@ -1,16 +1,19 @@
-.containerProductCard{
+* {
+  font-family: "Dosis" !important;
+}
+.containerProductCard {
   width: 300px;
-   padding: 5%;
-   margin:20px 20px;
+  padding: 5%;
+  margin: 20px 20px;
 }
-.imgProductCard{
+.imgProductCard {
   height: 180px;
-   width: 250px;
-   border-radius: 30px;
-   margin-right: 10px;
+  width: 250px;
+  border-radius: 30px;
+  margin-right: 10px;
 }
-.ListItemText{
-  border-top: 1px solid #D3D3D3;
-   border-bottom: 1px solid #D3D3D3;
-    padding: 4px;
+.ListItemText {
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 4px;
 }

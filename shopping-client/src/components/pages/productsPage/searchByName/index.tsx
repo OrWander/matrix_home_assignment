@@ -1,5 +1,5 @@
 import { Autocomplete, TextField } from '@mui/material';
-import { useEffect, useState } from 'react';
+import './index.css';
 
 export default function SearchByName(props: {
   options: Array<any>;

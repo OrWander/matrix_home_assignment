@@ -1,0 +1,33 @@
+.containerProductPage {
+  padding: 10px 10px;
+  background: #e0e0e0;
+}
+.childOneProductPage {
+  width: 85%;
+  text-align: center;
+  margin: 0 0;
+  display: inline-block;
+  background: #ffffff;
+}
+.childTwoProductPage {
+  display: inline-block;
+  width: 100%;
+}
+h1 {
+  text-align: left;
+  margin-left: 20px;
+}
+.searchDivs {
+  display: inline-block;
+  margin: auto;
+  width: 30%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.productDirectParent {
+  display: inline-block;
+  max-width: 340px;
+  margin: auto;
+  margin-right: 20px;
+}
